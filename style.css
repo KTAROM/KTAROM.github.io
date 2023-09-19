@@ -1,0 +1,114 @@
+* {
+  background-color: black;
+}
+
+/* ESTILOS NAVBAR */
+.contenedor {
+  position: fixed;
+
+}
+
+/* VERSION 1 */
+.nav-menu {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.nav-menu ul {
+  align-items: center;
+  list-style: none;
+}
+
+.nav-menu ul a {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: beige;
+
+}
+
+.nav-menu ul a:hover {
+  display: block;
+  background-color: rgb(241, 134, 12);
+}
+
+.nav-menu::before {
+  justify-content: center;
+  content: url(/Img/images.jpg);
+
+}
+
+
+/* VERSION 2 */
+
+.nav-menuv2 {
+  display: flex;
+  width: 800px;
+}
+
+.nav-menuv2 ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+
+}
+
+.nav-menuv2 ul a {
+
+  text-decoration: none;
+  padding: 20px;
+  color: beige;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.nav-menuv2 ul a:hover {
+  display: block;
+  background-color: rgb(241, 134, 12);
+}
+
+
+/* ESTILOS PEDIDOS */
+
+
+@media screen {
+  .pedidos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+
+
+  }
+}
+
+/* ESTILO HOME MAIN */
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 166, 0, 0.5);
+  font-family: fantasy;
+  font-size: larger;
+
+}
+
+
+.carousel {
+  margin-left: 400px;
+  padding-top: 70px;
+  width: 450px;
+  height: auto;
+
+}
+
+.iconos {
+
+  display: flex;
+  justify-content:end;
+  padding: 20px;
+
+}
